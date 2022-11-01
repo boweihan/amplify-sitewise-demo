@@ -51,6 +51,15 @@
       },
       "storage": {
         "dashboards": {}
+      },
+      "function": {
+        "AdminQueries01d060aa": {
+          "deploymentBucketName": "amplify-demoapp-amplify-103901-deployment",
+          "s3Key": "amplify-builds/AdminQueries01d060aa-30626543783737702b58-build.zip"
+        }
+      },
+      "api": {
+        "AdminQueries": {}
       }
     }
   }
