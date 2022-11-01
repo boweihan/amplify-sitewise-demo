@@ -40,7 +40,8 @@
     },
     "categories": {
       "auth": {
-        "demoapp57784547": {}
+        "demoapp57784547": {},
+        "userPoolGroups": {}
       },
       "hosting": {
         "amplifyhosting": {
