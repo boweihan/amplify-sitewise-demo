@@ -58,6 +58,7 @@
       ]
     },
     "breakCircularDependency": true,
-    "dependsOn": []
+    "dependsOn": [],
+    "adminQueryGroup": "Admin"
   }
 }
