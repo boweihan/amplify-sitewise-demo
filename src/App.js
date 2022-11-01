@@ -5,15 +5,18 @@ import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 
 import AppLayout from "@cloudscape-design/components/app-layout";
-import { DashboardList } from "./DashboardList";
+import { Charts } from "./Charts";
 
 import awsExports from "./aws-exports";
+import "@iot-app-kit/components/styles.css";
 Amplify.configure(awsExports);
 
 function App() {
   return (
     <Authenticator>
-      {() => <AppLayout contentType="form" content={<DashboardList />} />}
+      {(auth) => (
+        <AppLayout contentType="form" content={<Charts auth={auth} />} />
+      )}
     </Authenticator>
   );
 }
