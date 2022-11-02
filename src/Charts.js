@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Auth } from "aws-amplify";
+import { I18n } from "aws-amplify";
 import { initialize } from "@iot-app-kit/source-iotsitewise";
 import {
   LineChart,
@@ -8,6 +9,27 @@ import {
 } from "@iot-app-kit/react-components";
 import { IoTSiteWiseClient } from "@aws-sdk/client-iotsitewise";
 import { IoTEventsClient } from "@aws-sdk/client-iot-events";
+
+// amplify detects browser language automatically, but you can set it explicitly
+I18n.setLanguage("eng");
+
+const dict = {
+  eng: {
+    "Sign In": "Sign In",
+    "Sign Up": "Sign Up",
+    "For Operators": "For Operators",
+  },
+  fr: {
+    "Sign In": "Se connecter",
+    "Sign Up": "S'inscrire",
+  },
+  es: {
+    "Sign In": "Registrarse",
+    "Sign Up": "Regístrate",
+  },
+};
+
+I18n.putVocabularies(dict);
 
 const REGION = "us-east-1";
 
@@ -41,7 +63,7 @@ export const Charts = ({ auth }) => {
   return (
     <div>
       <button onClick={() => Auth.signOut()}>Logout</button>
-      <h1>For Operators</h1>
+      <h1>{I18n.get("For Operators")}</h1>
       <div style={{ height: 300 }}>
         <LineChart
           viewport={{ duration: "5m" }}
