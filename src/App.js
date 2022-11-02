@@ -1,5 +1,5 @@
 import "@cloudscape-design/global-styles/index.css";
-import { Amplify } from "aws-amplify";
+import { Amplify, Analytics } from "aws-amplify";
 
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";

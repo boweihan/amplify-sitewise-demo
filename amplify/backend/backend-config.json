@@ -94,5 +94,11 @@
         }
       ]
     }
+  },
+  "analytics": {
+    "amplify": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

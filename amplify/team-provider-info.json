@@ -60,6 +60,9 @@
       },
       "api": {
         "AdminQueries": {}
+      },
+      "analytics": {
+        "amplify": {}
       }
     }
   }

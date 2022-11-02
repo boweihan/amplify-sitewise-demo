@@ -35,5 +35,12 @@ export type AmplifyDependentResourcesAttributes = {
             "ApiName": "string",
             "ApiId": "string"
         }
+    },
+    "analytics": {
+        "amplify": {
+            "Region": "string",
+            "Id": "string",
+            "appName": "string"
+        }
     }
 }
